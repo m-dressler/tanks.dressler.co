@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+body button {
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+body .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+body .overlay * {
+  pointer-events: all;
+}
+
+canvas {
+  cursor: crosshair;
+}
+
+#popups {
+  display: none;
+}
+#popups[active] {
+  display: flex;
+}
+#popups #popup {
+  margin-top: auto;
+  margin: auto;
+  background-color: white;
+  border-radius: 1em;
+}
+#popups #popup .header {
+  display: flex;
+}
+#popups #popup .close {
+  margin-right: 1em;
+  margin-left: auto;
+  margin-top: 1em;
+  font-weight: 700;
+  border: none;
+}
+#popups #popup .text {
+  padding: 0em 1em;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu #navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(116, 125, 255);
+  padding: 2em;
+}
+#menu #navigation button {
+  background-color: rgb(113, 255, 201);
+  font-size: 2em;
+  border-radius: 100em;
+  padding: 0.5em 0.75em;
+}/*# sourceMappingURL=style.css.map */

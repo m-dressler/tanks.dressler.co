@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Oui Tanks</title>
+  <script src="./js/src/Ouitanks.js" type="module"></script>
+</head>
+
+<body>
+  <div id="debug" style="z-index: 10;background: white;display: inline;position: fixed;">
+    <canvas width="400" height="300"></canvas>
+  </div>
+  <div id="menu" class="overlay">
+    <div id="navigation">
+      <img src="./img/logo.svg">
+      <button id="start-game">Start Game</button>
+      <button id="create-server">Multiplayer</button>
+      <button id="connect-server">Connect Server</button>
+    </div>
+  </div>
+  <div id="popups" class="overlay center">
+    <div id="popup">
+      <div class="header">
+        <button class="close">X</button>
+      </div>
+      <p class="text"></p>
+    </div>
+  </div>
+</body>
+
+</html>
